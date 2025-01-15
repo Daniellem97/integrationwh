@@ -1,7 +1,7 @@
 module "spacelift_msteams" {
-  source = "spacelift-io/msteams/spacelift"
+  source = "git::https://github.com/spacelift-io/terraform-spacelift-msteams.git//modules/msteams?ref=pr-branch-name"
 
-  channel_name = "Test-Channel"
+  channel_name = "test"
   space_id     = "root"
-  webhook_url  = "https://spaceliftio.webhook.office.com/webhookb2/6a2d4776-2147-4f6b-8d57-07c2cd38a8ec@ff0c9003-ee01-4943-b5ad-b23356eeada1/IncomingWebhook/a61d7eb7e4304a64b39f65f0cb23e491/370f1a8b-534a-484f-8c3f-202d61851c85/V2e4POpqp2DkvOBRMoNFSRJ8cCul8_RMPBnADiMuMK_H81"
+  webhook_url  = "https://prod-98.westus.logic.azure.com:443/workflows/b0f93017fd494640813905f4fe26fe01/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=MtZYfhMfSsNALNvyzLtOtgkQySOjD6ZTDsVMdwOoQA8"
 }
