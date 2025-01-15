@@ -1,5 +1,5 @@
 module "spacelift_msteams" {
-  source = "git::https://github.com/spacelift-io/terraform-spacelift-msteams.git//modules/msteams?ref=push-pvkurtntznyu"
+  source = "git::https://github.com/spacelift-io/terraform-spacelift-msteams.git?ref=push-pvkurtntznyu"
 
   channel_name = "test"
   space_id     = "root"
